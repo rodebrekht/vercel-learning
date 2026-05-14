@@ -32,7 +32,7 @@ export default function Home() {
       <header className="relative z-10 border-b" style={{ borderColor: "var(--ink-line)" }}>
         <div className="mx-auto max-w-[1280px] px-8 py-5 flex items-center justify-between">
           <div className="flex items-baseline gap-3">
-            <span className="font-display text-[22px] tracking-tight">Rota Done</span>
+            <span className="font-logo text-[22px] tracking-tight">Rota Done</span>
             <span className="stamp stamp-dim">v.{new Date().getFullYear() - 2025}.0</span>
           </div>
           <nav className="hidden md:flex items-center gap-8 stamp stamp-dim">
@@ -319,7 +319,7 @@ export default function Home() {
       <footer className="relative z-10" style={{ borderTop: "1px solid var(--ink-line)" }}>
         <div className="mx-auto max-w-[1280px] px-8 py-12 flex flex-wrap items-end justify-between gap-8">
           <div>
-            <div className="font-display text-[28px] tracking-tight">Rota Done</div>
+            <div className="font-logo text-[28px] tracking-tight">Rota Done</div>
             <div className="stamp stamp-dim mt-2">
               Made in the UK · For shift-based teams · {new Date().getFullYear()}
             </div>

@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Fraunces, Instrument_Sans, JetBrains_Mono } from "next/font/google";
+import { Fraunces, Newsreader, Instrument_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 const fraunces = Fraunces({
+  variable: "--font-logo",
+  subsets: ["latin"],
+});
+
+const newsreader = Newsreader({
   variable: "--font-display",
   subsets: ["latin"],
-  axes: ["opsz", "SOFT"],
+  style: ["normal", "italic"],
 });
 
 const instrument = Instrument_Sans({
@@ -30,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${instrument.variable} ${jetbrains.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${newsreader.variable} ${instrument.variable} ${jetbrains.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
