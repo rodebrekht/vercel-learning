@@ -47,6 +47,11 @@ body {
 .font-display {
   font-family: var(--font-display), ui-serif, Georgia, serif;
   font-optical-sizing: auto;
+  letter-spacing: -0.018em;
+}
+.font-logo {
+  font-family: var(--font-logo), ui-serif, Georgia, serif;
+  font-optical-sizing: auto;
   letter-spacing: -0.02em;
 }
 
